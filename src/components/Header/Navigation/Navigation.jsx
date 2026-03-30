@@ -1,14 +1,22 @@
-import { Link } from "react-router-dom";
-import "./Navigation.css";
+import Nav from 'react-bootstrap/Nav';
+import { useLocation } from 'react-router-dom';
+import './Navigation.css';
 
 function NavigationComponent() {
-  return (
-    <nav>
-      <Link to="/">Components</Link>
-      <Link to="/use-state">useState</Link>
-      <Link to="/crud">CRUD</Link>
-    </nav>
+  const location = useLocation();
 
+  return (
+    <Nav className="nav-block" variant="underline" activeKey={location.pathname}>
+      <Nav.Item>
+        <Nav.Link href="/" eventKey="/">Components</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/use-state" eventKey="/use-state">useState</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/crud" eventKey="/crud">CRUD</Nav.Link>
+      </Nav.Item>
+    </Nav>
   );
 }
 
