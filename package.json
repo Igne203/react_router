@@ -1,7 +1,7 @@
 {
-  "name": "project_one",
+  "name": "react_router",
   "private": true,
-  "homepage": "https://github.com/Igne203/React_Frontend_CRUD",
+  "homepage": "https://github.com/Igne203/react_router",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -16,6 +16,7 @@
     "react": "^19.2.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.2",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
